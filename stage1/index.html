@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Data Showcase</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+        header {
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        /* Add your CSS styles for elements with data-tested attributes here */
+        [data-testid] {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px auto;
+            border-radius: 30px;
+            width: 50%;
+            text-align: center;
+        }
+
+        /* Add more CSS styles for specific data-tested attributes here if needed */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Data Showcase</h1>
+    </header>
+
+    <section data-testid="personal-info">
+        <h2>Personal Information</h2>
+        <p data-testid="slackUserName">Name: Marvis Dev</p>
+        <img src="img/Snapchat-2015464271.jpg" alt="marvisdev" data-testid="slackDisplayImage">
+        <p id="myAge" data-testid="myAge">Age: 18</p>
+        <p id="myEmail" data-testid>Email: marviswilson500@gmail.com</p>
+        <p id="myTrack" data-testid="myTrack">Frontend</p>
+    </section>
+
+    <section data-testid="real-time-data">
+        <h2>Real-Time Data</h2>
+        <p id="currentDayOfTheWeek" data-testid="currentDayOfTheWeek">Monday</p>
+        <p id="currentUTCTime" data-testid="currentUTCTime"></p>
+        <p><a href="" data-testid="githubURL"></a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Marvis Dev</p>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>
